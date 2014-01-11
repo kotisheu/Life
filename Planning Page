@@ -1,0 +1,23 @@
+Character Attributes
+- happiness
+- moolah
+- tileCtr: tell what tile you're on
+- strength
+- smarts
+- mouthMeter: how well can you talk?
+- interest
+- hasMet: boolean-- have you seen each other already?
+- attractiveness
+
+Different Types of Characters
+- buffy: the buff person
+- nerd
+- student
+- workMate
+- royalty
+
+Places
+- school
+- gym
+- library
+- mall/beautySalon
