@@ -1,23 +1,37 @@
 Character Attributes
+- NAME
 - happiness
 - moolah
 - tileCtr: tell what tile you're on
-- strength
-- smarts
+- str(ength)
+- int(smarts)
 - mouthMeter: how well can you talk?
 - interest
 - hasMet: boolean-- have you seen each other already?
-- attractiveness
+- att(ractiveness)
+- h(ealth) p
 
 Different Types of Characters
-- buffy: the buff person
-- nerd
-- student
-- workMate
-- royalty
+- buffy: buffGuy buffGirl
+- nerd: smartGuy smartGirl  
+- student: stuGuy stuGirl
+- workMate: workGuy workGirl
+- royalty:  royGuy royGirl
 
 Places
-- school
-- gym
-- library
-- mall/beautySalon
+- school (+int, -hp, +mm)
+- gym (++str, -$)
+- library (++int)
+- mall(+att , --$)
+- beautySalon(++att, -$) 
+- date(--$, ++hap)
+- work( ++$, -happi, -hp
+- walk(+happi, +hp)
+
+
+<PLACE>-<BOYNAME>-<GIRLNAME>-<MAINATTRIBUTE>
+GYM- - -STR
+LIBRARY- - -INT
+MALL- - -ATT(RACTIVENESS)
+WORK- - -MIXED/$$
+SCHOOL- - -MIXED/INT
