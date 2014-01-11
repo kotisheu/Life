@@ -35,3 +35,28 @@ LIBRARY-Felix-Fiona-INT
 MALL-Damon-Vivian-ATT(RACTIVENESS)
 WORK-Jayce-Hazel-MIXED/$$
 SCHOOL-Sebastian-Alyssa-MIXED/INT
+
+Big Events/Choices
+- buy house
+- buy car
+- get married
+- travel the world
+- graduation
+- children
+- start own business
+- win lottery //random
+
+Little Events (Luck-Based or Choices)
+- get cold (-hp)
+- find $5/$10/$15 (+$)
+- lost $5/$10/$15 //you misplaced it/got robbed (-$)
+- snowday! (+hp, +happi)
+- stuck in traffic (-happi)
+- friend's birthday + party (-$, +happi)
+- fall (-hp, - happi)
+- coffee break with old friends (-$, +happi, +hp)
+- get yelled at by boss (-happi)
+- get present for no reason (+happi)
+- hear song you like & dance (+happi)
+- spill your coffee (-happi, -$)
+- family gathering (+happi, +hp)
