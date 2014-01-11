@@ -8,5 +8,6 @@ public class Character {
   protected int _mouthMeter;
   protected int _interest;
   protected boolean _hasMet;
+  protected int _attractiveness;
 
 }
