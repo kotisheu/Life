@@ -18,14 +18,14 @@ Different Types of Characters
 - workMate: workGuy workGirl
 - royalty:  royGuy royGirl
 
-Places
+Places(effects ???)
 - school (+int, -hp, +mm)
 - gym (++str, -$)
 - library (++int)
 - mall(+att , --$)
 - beautySalon(++att, -$) 
-- date(--$, ++hap)
-- work( ++$, -happi, -hp
+- date(--$, ++happi)
+- work( ++$, -happi, -hp)
 - walk(+happi, +hp)
 
 
