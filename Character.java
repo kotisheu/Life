@@ -9,5 +9,6 @@ public class Character {
   protected int _interest;
   protected boolean _hasMet;
   protected int _attractiveness;
+  protected String _name;
 
 }
