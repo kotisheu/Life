@@ -16,7 +16,8 @@ Different Types of Characters
 - nerd: smartGuy smartGirl  
 - student: stuGuy stuGirl
 - workMate: workGuy workGirl
-- royalty:  royGuy royGirl
+- pretty: prettyGuy prettyGirl
+-??? royalty:  royGuy royGirl ????
 
 Places(effects ???)
 - school (+int, -hp, +mm)
@@ -35,7 +36,7 @@ LIBRARY-Felix-Fiona-INT
 MALL-Damon-Vivian-ATT(RACTIVENESS)
 WORK-Jayce-Hazel-MIXED/$$
 SCHOOL-Sebastian-Alyssa-MIXED/INT
-
+??? WALK- - -ATT/MIXED
 Big Events/Choices
 - buy house
 - buy car
