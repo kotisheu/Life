@@ -36,7 +36,8 @@ LIBRARY-Felix-Fiona-INT
 MALL-Damon-Vivian-ATT(RACTIVENESS)
 WORK-Jayce-Hazel-MIXED/$$
 SCHOOL-Sebastian-Alyssa-MIXED/INT
-??? WALK- - -ATT/MIXED
+??? WALK-Will-Tatiana-ATT/MIXED
+
 Big Events/Choices
 - buy house
 - buy car
@@ -45,7 +46,6 @@ Big Events/Choices
 - graduation
 - children
 - start own business
-- win lottery //random
 
 Little Events (Luck-Based or Choices)
 - get cold (-hp)
@@ -62,3 +62,11 @@ Little Events (Luck-Based or Choices)
 - spill your coffee (-happi, -$)
 - family gathering (+happi, +hp)
 - win gift card (+$)
+- win lottery (+$$)
+- read newspaper, learn stuff (+int)
+- I lift! (+str)
+- buy a new book (+int)
+- flat tire (-$, -happi)
+- eat ice cream (+happi, +hp)
+- find cookies, eat cookies (+happi, =hp)
+- 
