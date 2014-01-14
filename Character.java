@@ -53,7 +53,7 @@ public class Character {
   
   public int setHappi(int newVal) {
     int oldHappi = _happi;
-    happi = newVal;
+    _happi = newVal;
     return oldHappi;
   }
 
@@ -133,7 +133,7 @@ public class Character {
 
   public boolean setMet(boolean newVal) {
     boolean oldMet = _met;
-    _met = newVal;
+    _hasMet = newVal;
     return oldMet;
   }
   
