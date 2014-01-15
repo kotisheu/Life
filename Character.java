@@ -4,9 +4,9 @@ public class Character {
   protected String _route;
   protected int _tileCtr;
   protected int _happi;//happiness
-  protected int _str;//strength
-  protected int _int;//intelligence
-  protected int _mm;//mouth meter--how well can you talk?
+  protected int _str;//strength -- out of 100
+  protected int _int;//intelligence --  out of 100
+  protected int _mm;//mouth meter--how well can you talk? (out of 100)
   protected int _aff;//affinity
   protected int _att;//attractiveness
   protected int _hp;//health, needed to perform certain activities
