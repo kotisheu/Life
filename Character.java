@@ -132,7 +132,7 @@ public class Character {
   }
 
   public boolean setMet(boolean newVal) {
-    boolean oldMet = _met;
+    boolean oldMet = _hasMet;
     _hasMet = newVal;
     return oldMet;
   }
