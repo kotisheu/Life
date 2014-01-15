@@ -20,7 +20,10 @@ public class beginLife{
   String g= in.readLine();
   boolean m;
   if (g== "male"){
-    m=true;}
+    m=false;}]
+  else if ( g=="female"){
+    m=true;
+  }
   person= Player( n, m); //<- CREATE THIS CONSTRU.
   s="Now for the final question:\n";
   s+="Would you like to attend college or begin work?";
@@ -42,15 +45,32 @@ public class beginLife{
 //////////////
   Buffy buffOne= new Buffy(person);
   //repeat^ for other characters
+  public int rollDice(){
+    return (int)(Math.random()* 7)
+  }
+  public int move(Player a){
+    int D= rollDice();
+    a.setTile(a.getTile+ D);
+    return D;
+  }
+  public void turn(Player a){
+    move(a);
+    if (person.getHp()>5){
+      afterHours.choosePlace()// CREATE AFTERHOURS INTERFACE/ EACH PLACE AND THIS FUNCT. 
+                              //EACH PLACE CONTAINS THE POSSIBLITITES FOR MEETING AND INTEREST.
+    }
+  }
 |||||||||||||  
 ||LIFEBEGIN||
 |||||||||||||
+ public void main start{String {}args){
   boolean gameOn = true;
   
   while(gameOn==true){
     //TURNS- CREATE DICE,MOVE, MINIEVENT TRIGGER,
+    
     //(if (person.getHp()>3){AFTERHOURS(PLACESSS!! esp DATE( list of  other characters, 
-    named only if met/ interest over x, accept only if interest >??));}, MEETCHARACTER
+    //named only if met/ interest over x, accept only if interest >??));}, MEETCHARACTER
     //CREATE (and note tiles/routes of)MAJOR EVENT "SPLITS", DIALOUGUES, CHOICES, GUI, AHHH
     endlife();
     //repeat until cond is met.
@@ -61,8 +81,9 @@ public class beginLife{
     gameOn=false;}
   else if (person.getHappi()<1){
     gameOn=false;}//EACH SHOULD RETURN TEXT THAT CORRESPONDS TO HOW GAME ENDED ( IE, " Congrats ~~~" or " You couldn't take the pressure and suicided"
-                    or "You fell ill and died"
+                    //or "You fell ill and died"
   calcScore();// CREATE THIS,PRINTS OUT THE CALCULATIONS AS WELL.
+  }
 ::::::::::::::::::
 :::::SCORING::::::
 ::::::::::::::::::
