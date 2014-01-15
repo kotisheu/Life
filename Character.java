@@ -12,7 +12,7 @@ public class Character {
   protected int _hp;//health, needed to perform certain activities
   protected double _moo;//money
   protected boolean _hasMet;
-  protected boolean _gender;
+  protected boolean _gender;//let true = girl, false = boy
   
   public Character() {
   }
