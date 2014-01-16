@@ -16,7 +16,7 @@ public class Buffy extends Character {
     setInt( (int) 25 * Math.random() );
     setMo( (int) 25 * Math.random() );
     setAtt( (int) 25 * Math.random() );
-    // Remember: the intelligence of the nerd is higher than 50
+    // Remember: the strength of the buff person is higher than 50
     setStr( 50 + (int) ( 50 * Math.random() ) );
     // initially, you have not met, so hasMet = false, & affinity(interest) is therefore 0
     setMet("false");
