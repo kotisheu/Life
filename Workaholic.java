@@ -9,7 +9,12 @@ public class Workaholic extends Character {
       setGen(true);
       setName("Hazel");
     }
-    //figure out the rest of the attributes
+
+    // school is at beginning of game -- lower stats required
+    setInt( (int) ( 75 * Math.random() ) );
+    setMo( (int) ( 75 * Math.random() ) );
+    setAtt( (int) ( 75 * Math.random() ) );
+    setStr( (int) ( 75 * Math.random() ) );
   }
 
 }
