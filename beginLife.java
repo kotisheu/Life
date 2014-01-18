@@ -44,7 +44,13 @@ public class beginLife{
  //CHARACTERS//
 //////////////
   Buffy buffOne= new Buffy(person);
-  //repeat^ for other characters
+  Student stuOne= new Student(person);
+  Nerd smartOne= new Nerd(person);
+  Pretty preOne= new Pretty(person);
+  Workaholic workOne= new Workaholic(person);
+  Royal royOne= new Royal(person);
+  
+  //Fuctions
   public int rollDice(){
     return (int)(Math.random()* 7)
   }
@@ -60,6 +66,14 @@ public class beginLife{
                               //EACH PLACE CONTAINS THE POSSIBLITITES FOR MEETING AND INTEREST.
     }
   }
+   public ___ calcScore(){
+ int score;
+ score+= person.happiness*50;
+ if (person.route.contains(A{//school
+   )
+  
+    }
+    
 |||||||||||||  
 ||LIFEBEGIN||
 |||||||||||||
@@ -84,12 +98,5 @@ public class beginLife{
                     //or "You fell ill and died"
   calcScore();// CREATE THIS,PRINTS OUT THE CALCULATIONS AS WELL.
   }
-::::::::::::::::::
-:::::SCORING::::::
-::::::::::::::::::
- public ___ calcScore(){
- }
-  //SCOREBOARD???????
-  
-    }
-    
+
+
