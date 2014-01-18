@@ -71,6 +71,14 @@ public class beginLife{
  score+= person.happiness*50;
  if (person.route.contains(A{//school
    )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
   
     }
     
