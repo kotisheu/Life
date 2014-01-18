@@ -66,31 +66,62 @@ public class beginLife{
                               //EACH PLACE CONTAINS THE POSSIBLITITES FOR MEETING AND INTEREST.
     }
   }
-   public ___ calcScore(){
+public String ___ calcScore(Player a){
  int score;
- score+= person.happiness*50;
- if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-    if (person.route.contains(A{//school
-   )
-  
+ String ns="";
+ score+= a.gethappiness*50;
+ score+= a.getmoo*50;
+    if (a.getroute().contains(A)){//SCHOOL
+    score+=250
     }
+    if (a.getroute().contains(B)){//WORK
+     score+=100
+    }
+    if (a.getroute().contains(C)){//MARRIAGE
+     score+=1000
+    }
+    if (a.getroute().contains(D)){//SINGLE
+    score-=500
+    }
+    if (a.getroute().contains(E)){//CHILD1
+     score+=500
+    }
+    if (a.getroute().contains(F)){//NO CHILD
+    score-=100
+    }
+    if (a.getroute().contains(G)){//HOUSE
+     score+=500
+    }
+    if (a.getroute().contains(H)){//NO HOUSE
+    score-=100
+    }
+    if (a.getroute().ontains(I)){//CHILD2
+     score+=250
+    }
+    if (a.getroute().contains(J)){//NO CHILD2
+    score-=100
+    }
+    if (a.getroute().contains(K)){//CAR
+     score+=200
+    }
+    if (a.getroute().contains(L)){//NO CAR
+    score-=100
+    }
+    if (a.getroute().contains(M)){//BUSINESS
+     score+=600
+    }
+    if (a.getroute().contains(N)){//NO BUSINESS
+    score-=200
+    }
+    if (a.getroute().contains(O)){//TRAVEL
+     score+=1000
+    }
+    if (a.getroute().contains(P)){//NO TRAVEL
+    score-=400
+    }
+    ns= a.getname()+ score;
+    return ns;
+}
     
 |||||||||||||  
 ||LIFEBEGIN||
