@@ -79,6 +79,16 @@ public class beginLife{
    )
     if (person.route.contains(A{//school
    )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
+    if (person.route.contains(A{//school
+   )
   
     }
     
