@@ -31,6 +31,12 @@ public class Buffy extends Character {
   }
   
   public void talk() {
+  	String r = "";
+  	r = "Nice to see you have a life outside the gym, too!";
+  	System.out.println(r);
+  }
+  
+  public void firstTalk() {
       isr = new InputStreamReader( System.in );
       in = new BufferedReader(isr);
 
