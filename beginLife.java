@@ -24,14 +24,24 @@ public class beginLife{
   }
   public int move(Player a){
     int D= rollDice();
-    a.setTile(a.getTile+ D);
+    int i=0;
+    while( i<D){
+    a.setTile(a.getTile()+ 1);
+      if(a.getTile()==200 && a.getRoute().contains(A)||a.getRoute().contains(B)){
+      Branchess.marry();
+      i=D;//stop
+      }
+      // repeaaaaaaaaaaaaaat ^
+      i++;
+    }
     return D;
   }
   public void turn(Player a){
     move(a);
-    
+    int e= (int)(Math.random() *201);
+    System.out.println(a.playEv(e));
    //move character in gui as well<--------- !!
-   // mini event call <!!
+   
   }
 public String ___ calcScore(Player a){
  int score;
