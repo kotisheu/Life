@@ -8,13 +8,13 @@ public class beginLife{
    
 // insert gui board stuff images (...)
 
-  Private Buffy buffOne= new Buffy(person);
-  Private Student stuOne= new Student(person);
-  Private Nerd smartOne= new Nerd(person);
-  Private Pretty preOne= new Pretty(person);
-  Private Workaholic workOne= new Workaholic(person);
-  Private Royal royOne= new Royal(person);
-  Player person;
+  private Buffy buffOne= new Buffy(person);
+  private Student stuOne= new Student(person);
+  private Nerd smartOne= new Nerd(person);
+  private Pretty preOne= new Pretty(person);
+  private Workaholic workOne= new Workaholic(person);
+  private Royal royOne= new Royal(person);
+  private Player person;
 
   
   
@@ -134,18 +134,20 @@ public String ___ calcScore(Player a){
     //TURNS- CREATE DICE,MOVE, MINIEVENT TRIGGER,
     turn(person);
   if (person.getHp()>5){
-  afterHours.choosePlace()
+  //choose place
+  s=" Choose place: gym, work, etcccc."
+  System.out.print (s);
+  String p=in.readLine();
+   if (p== "gym"){
+      afterHours.gym(); //isthishowyoucallthis .....
+   }
+   //^ repeaaaaaat
   }
-  /* CREATE AFTERHOURS INTERFACE
-  / EACH PLACE AND THIS FUNCT
-  EACH PLACE CONTAINS THE POSSIBLITITES FOR MEETING AND INTEREST.
-  named only if met/ interest over x, accept only if interest >??));}, MEETCHARACTER
-  CREATE (and note tiles/routes of)MAJOR EVENT "SPLITS", DIALOUGUES, CHOICES, GUI, AHHH
-    */
+
     turns ++;
     endlife();
     //repeat until cond is met.
-    calcScore(person)
+    calcScore(person,turns)
 }
 }
 
