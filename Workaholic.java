@@ -18,6 +18,12 @@ public class Workaholic extends Character {
   }
 
   public void talk() {
+    String r = "";
+    r = "I'm so glad I could take time out of my schedule for this...";
+    System.out.println(r);
+  }
+
+  public void firstTalk() {
       isr = new InputStreamReader( System.in );
       in = new BufferedReader(isr);
 
