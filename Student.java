@@ -25,7 +25,7 @@ public class Student extends Character {
   
   public void talk() {
     String r = "";
-    r = "Hey! Come on, I saved you a seat!"
+    r = "Hey! Come on, I saved you a seat!";
     System.out.println(r);
   }
 
