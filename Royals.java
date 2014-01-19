@@ -21,8 +21,14 @@ public class Royals extends Character {
     setMet(false);
     setAff(0);
   }
-
+  
   public void talk() {
+    String r = "";
+    r = "Just talking a walk outside makes me feel so free!";
+    System.out.println(r);
+  }
+
+  public void firstTalk() {
       isr = new InputStreamReader( System.in );
       in = new BufferedReader(isr);
 
