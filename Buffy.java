@@ -40,6 +40,25 @@ public class Buffy extends Character {
     s = "Oh, by the way, I'm " + getName() + ".";
     System.out.println(s);
     
+    s = "Why are you here? Most people don't bother with exercise."
+    s += "\t1: Yeah, well, I felt bad about sitting on the couch all the time. I wanted a change of environment."
+    s += "\t2: The temperature in the gym is much more consistent than outside, so it's better for me to work out here."
+    s += "\t3: I'm always in the gym. Exercise is how I let go and relax!"
+    System.out.println(s)  
+    String choice = in.readLine();
+    if (choice == "1") {
+      setAff( getAff() + 5 );
+      System.out.println("At least you found the right state of mind now! You'll like it, you'll see.");
+    }
+    else if (choice == "2") {
+      setAff( getAff() +10 );
+      System.out.println("Outside is its own different world. It's not bad, but I have to agree with you. Smart thinking!");
+    }
+    else if (choice == "3") {
+      setAff( getAff() + 20 );
+      System.out.println("We share the same thought process, then! The gym is how I let off steam myself.");
+    }
+    
     s = "Are you interested in sports? What's your favorite?\n"
     s += "\t1: No, I'm not the sporty type of person."
     s += "\t2: I don't play sports, but I love to watch! Basketball's my favorite!"
@@ -56,10 +75,8 @@ public class Buffy extends Character {
     }
     else if (choice == "3") {
       setAff( getAff() + 15 );
-      System.out.priintln("I guess we'll have to have a little competition someday, then. huh?")
+      System.out.println("I guess we'll have to have a little competition someday, then. huh? Winner treats for lunch.");
     }
-    
-    
     
     s = "Well, I'll see you around. Don't hurt yourself, okay?";
     s = "/nSee you around!"
