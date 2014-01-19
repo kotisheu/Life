@@ -19,8 +19,10 @@ public class Player extends Character {
 	setGen(gender);
    }
    
-   public void setRoute(String a){
-	_route+=a;
+   public String setRoute(String a){
+       String oldRoute = _route;
+	_route += a;
+	return oldRoute;
    }
 
    public String playEv(int x) {
@@ -73,7 +75,7 @@ public class Player extends Character {
 	    fall();
 	    retStr = "You were walking down the street when you took a tumble! Oh, the embarrassment! -5 HP, -10 Happiness";
 	}
-	else if ( x > = 60 && x < 65 ) {
+	else if ( x >= 60 && x < 65 ) {
 	    slipOnIce();
 	    retStr = "You walk on ice and go flying! Ouch! -5 HP, -10 Happiness";
 	}
@@ -229,7 +231,7 @@ public class Player extends Character {
 	return oldMoo;
     }
 
-    public int lostTen() {
+    public int loseTen() {
 	int oldMoo = getMoo();
 	setMoo(oldMoo - 10);
 	return oldMoo;
@@ -241,7 +243,7 @@ public class Player extends Character {
 	return oldMoo;
     }
 
-    public int Snowday() {
+    public int snowday() {
 	int oldHP = getHP();
 	int oldHappi = getHappi();
 	if (oldHP < 16 ) 
@@ -341,7 +343,7 @@ public class Player extends Character {
     }
 
     public int dance() {
-	int oldaHappi = getHappi();
+	int oldHappi = getHappi();
 	setHappi(oldHappi + 2);
 	return oldHappi;
     }
@@ -416,7 +418,7 @@ public class Player extends Character {
 	return oldInt;
     }
 
-    public int hitInHead() {
+    public int hitOnHead() {
 	int oldHP = getHP();
 	int oldInt = getInt();
 	setHP(oldHP - 5);

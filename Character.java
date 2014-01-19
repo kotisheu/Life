@@ -10,7 +10,7 @@ public class Character {
   protected int _aff;//affinity
   protected int _att;//attractiveness
   protected int _hp;//health, needed to perform certain activities
-  protected double _moo;//money
+  protected int _moo;//money
   protected boolean _hasMet;
   protected boolean _gender;//let true = girl, false = boy
   
@@ -117,12 +117,12 @@ public class Character {
     return oldHP;
   }
 
-  public double getMoo() {
+  public int getMoo() {
     return _moo;
   }
 
-  public double setMoo(double newVal) {
-    double oldMoo = _moo;
+  public int setMoo(int newVal) {
+    int oldMoo = _moo;
     _moo = newVal;
     return oldMoo;
   }
@@ -140,5 +140,11 @@ public class Character {
   public boolean getGen() {
     return _gender;
   }
+
+    public boolean setGen(boolean newGender) {
+	boolean oldGen = _gender;
+	_gender = newGender;
+	return oldGen;
+    }
 
 }
