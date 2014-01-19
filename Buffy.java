@@ -22,5 +22,45 @@ public class Buffy extends Character {
     setMet("false");
     setAff(0);
   }
+  
+  public void talk() {
+    String s = "";
+    s = "Hey, I've seen you around. You come here a lot?";
+    System.out.println(s);
+    String response = in.readLine();
+    if (response == "yes") {
+      setAff( getAff() + 10 );
+      System.out.println("Awesome. I'll be seeing you more, then. I'll keep a lookout for you.")
+    }
+    else if (response == "no") {
+      setAff( getAff() - 10 );
+      System.out.println("That's too bad. You should come more often.")
+    }
+    
+    s = "Oh, by the way, I'm " + getName() + ".";
+    
+    s = "Are you interested in sports? What's your favorite?\n"
+    s += "\t1: No, I'm not the sporty type of person."
+    s += "\t2: I don't play sports, but I love to watch! Basketball's my favorite!"
+    s += "\t3: Of course! I love being in action! I don't have a favorite, I love them so much!"
+    System.out.println(s)  
+    String choice = in.readLine();
+    if (choice == "1") {
+      setAff( getAff() - 10 );
+      System.out.println("Why not? Think of all the excitement and motion!");
+    }
+    else if (choice == "2") {
+      setAff( getAff() +5 );
+      System.out.println("Really? Basketball's my favorite, too! Playing is much more fun, though. I can teach you!");
+    }
+    else if (choice == "3") {
+      setAff( getAff() + 15 );
+      System.out.priintln("I guess we'll have to have a little competition someday, then. huh?")
+    }
+    
+    s = "Well, I'll see you around. Don't hurt yourself, okay?";
+    System.out.println(s);
+    
+  }
 
 }
