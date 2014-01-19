@@ -38,6 +38,7 @@ public class Buffy extends Character {
     }
     
     s = "Oh, by the way, I'm " + getName() + ".";
+    System.out.println(s);
     
     s = "Are you interested in sports? What's your favorite?\n"
     s += "\t1: No, I'm not the sporty type of person."
@@ -58,7 +59,10 @@ public class Buffy extends Character {
       System.out.priintln("I guess we'll have to have a little competition someday, then. huh?")
     }
     
+    
+    
     s = "Well, I'll see you around. Don't hurt yourself, okay?";
+    s = "/nSee you around!"
     System.out.println(s);
     
   }
