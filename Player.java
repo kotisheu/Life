@@ -29,7 +29,7 @@ public class Player extends Character {
 
 	    }*/
 public void setRoute(String a){
-	Route+=a;
+	_route+=a;
 }
     public int getCold() {
 	int oldHP = getHP();
