@@ -25,7 +25,7 @@ public class Nerd extends Character {
   
   public void talk() {
     String r = "";
-    r = "I thought I'd take a step outside... The world really is wonderous...";
+    r = "The world really is wonderous, as in the books...";
     System.out.println(r);
   }
 
