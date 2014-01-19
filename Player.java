@@ -28,7 +28,9 @@ public class Player extends Character {
 	    findTen();
 
 	    }*/
-
+public void setRoute(String a){
+	Route+=a;
+}
     public int getCold() {
 	int oldHP = getHP();
 	int oldStr = getStr();
