@@ -204,7 +204,6 @@ public class Player extends Character {
 	setHP(oldHP - 5);
 	setStr(oldStr - 5);
 	return oldHP;
-	return oldStr;
     }
 
     public int findFive() {
@@ -252,7 +251,6 @@ public class Player extends Character {
 	    setHP(20);
 	setHappi(oldHappi + 5);
 	return oldHP;
-	return oldHappi;
     }
 
     public int trafficJam() {
@@ -266,7 +264,6 @@ public class Player extends Character {
 	int oldHappi = getHappi();
 	setMoo(oldMoo - 10);
 	setHappi(oldHappi + 10);
-	return oldMoo;
 	return oldHappi;
     }
 
@@ -277,9 +274,7 @@ public class Player extends Character {
 	setMoo(oldMoo - 15);
 	setHappi(oldHappi + 15);
 	setAtt(oldAtt + 5);
-	return oldMoo;
 	return oldHappi;
-	return oldAtt;
     }
 
     public int fall() {
@@ -288,7 +283,6 @@ public class Player extends Character {
 	setHP(oldHP - 5);
 	setHappi(oldHappi - 10);
 	return oldHP;
-	return oldHappi;
     }
 
     public int slipOnIce() {
@@ -297,7 +291,6 @@ public class Player extends Character {
 	setHP(oldHP - 5);
 	setHappi(oldHappi - 10);
 	return oldHP;
-	return oldHappi;
     }
 
     public int coffeeBreak() {
@@ -310,8 +303,6 @@ public class Player extends Character {
 	    setHP(oldHP + 5);
 	else 
 	    setHP(20);
-	return oldMoo;
-	return oldHappi;
 	return oldHP;
     }
 
@@ -320,7 +311,6 @@ public class Player extends Character {
 	int oldHappi = getHappi();
 	setMoo(oldMoo - 2);
 	setHappi(oldHappi + 5);
-	return oldMoo;
 	return oldHappi;
     }
 
@@ -354,7 +344,6 @@ public class Player extends Character {
 	setHappi(oldHappi - 2);
 	setMoo(oldMoo - 5);
 	return oldHappi;
-	return oldMoo;
     }
 
     public int familyGather() {
@@ -365,6 +354,7 @@ public class Player extends Character {
 	    setHP(oldHP + 5);
 	else 
 	    setHP(20);
+	return oldHP;
     }
 
     public int winGC() {
@@ -409,7 +399,6 @@ public class Player extends Character {
 	setInt(oldInt + 2);
 	setMoo(oldMoo - 5);
 	return oldInt;
-	return oldMoo;
     }
 
     public int readBook() {
@@ -424,7 +413,6 @@ public class Player extends Character {
 	setHP(oldHP - 5);
 	setInt(oldInt - 10);
 	return oldHP;
-	return oldInt;
     }
 
     public int flatTire() {
@@ -433,7 +421,6 @@ public class Player extends Character {
 	setHappi(oldHappi - 5);
 	setMoo(oldMoo - 20);
 	return oldHappi;
-	return oldMoo;
     }
 
     public int iceCream() {
@@ -446,8 +433,6 @@ public class Player extends Character {
 	    setHP(oldHP + 2);
 	else
 	    setHP(20);
-	return oldHappi;
-	return oldMoo;
 	return oldHP;
     }
 
@@ -459,7 +444,6 @@ public class Player extends Character {
 	    setHP(oldHP + 2);
 	else
 	    setHP(20);
-	return oldHappi;
 	return oldHP;
     }
 
@@ -469,7 +453,6 @@ public class Player extends Character {
 	setAtt(oldAtt + 5);
 	setMoo(oldMoo - 5);
 	return oldAtt;
-	return oldMoo;
     }
 
     public int badHair() {
@@ -483,7 +466,6 @@ public class Player extends Character {
 	int oldHappi = getHappi();
 	setAtt(oldAtt - 5);
 	setHappi(oldHappi - 5);
-	return oldAtt;
 	return oldHappi;
     }
 
@@ -492,7 +474,6 @@ public class Player extends Character {
 	int oldHappi = getHappi();
 	setAtt(oldAtt - 5);
 	setHappi(oldHappi - 10);
-	return oldAtt;
 	return oldHappi;
     }
 
@@ -516,8 +497,6 @@ public class Player extends Character {
 	setHappi(oldHappi - 10);
 	setStr(oldStr - 10);
 	return oldHP;
-	return oldHappi;
-	return oldStr;
     }
 
     public int breakLeg() {
@@ -528,8 +507,6 @@ public class Player extends Character {
 	setHappi(oldHappi - 10);
 	setStr(oldStr - 15);
 	return oldHP;
-	return oldHappi;
-	return oldStr;
     }
 
     public int kickBox() {
