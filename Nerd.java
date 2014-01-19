@@ -22,8 +22,14 @@ public class Nerd extends Character {
     setMet(false);
     setAff(0);
   }
-
+  
   public void talk() {
+    String r = "";
+    r = "I thought I'd take a step outside... The world really is wonderous..."
+    System.out.println(r);
+  }
+
+  public void firstTalk() {
       isr = new InputStreamReader( System.in );
       in = new BufferedReader(isr);
 
