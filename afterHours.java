@@ -5,17 +5,11 @@ public class afterHours{
   //each place- chances of meeting other character, dialouge per character, effects
   //choose place, goes to that class, performs place-specific events
   
-  public afterHours(Player A){
-    Student stu = new Student(A);
-    Buffy buf = new Buffy(A);
-    Nerd ner = new Nerd(A);
-    Pretty pret = new Pretty(A);
-    Workaholic work = new Workaholic(A);
-    Royal roy = new Royal(A);
+  public afterHours(){
   }
   //from highest chance to lowest chance
   
-  public void school(Player A){
+  public void school(Player A, Student stu){
     //(+int, -hp, +mm),only if route A-> Student,
     A.setInt( A.getInt() + 5 );
     A.setHP( A.getHP() - 2 );
@@ -32,7 +26,7 @@ public class afterHours{
     }
   }
   
-  public void gym(Player A){ 
+  public void gym(Player A, Buffy buf, Pretty pret, Workaholic work){ 
     //(++str, -$),buffy,pretty,work
     A.setStr( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
@@ -55,7 +49,7 @@ public class afterHours{
     }
   }
   
-  public void library (Player A){
+  public void library (Player A, Nerd ner, Student stu){
   //(++int),smart,student(unable to raise interest if not route A)
     A.setInt( A.getInt() + 5 );
     int boo = (int) ( 5 * Math.random() );
@@ -73,7 +67,7 @@ public class afterHours{
     }
   }
   
-  public void mall(Player A){
+  public void mall(Player A, Pretty pret, Workaholic work, Buffy buf){
   //(+att , --$)pretty, work, buffy
     A.setAtt( A.getAtt() + 5 );
     A.setMoo( A.getMoo() - 10 );
@@ -96,7 +90,7 @@ public class afterHours{
     }
   }
   
-  public void beautySalon(Player A){
+  public void beautySalon(Player A, Pretty pret, Nerd ner){
   //(++att, -$) pretty, smart
     A.setAtt( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
@@ -110,7 +104,7 @@ public class afterHours{
       ner.setAff( ner.getAff() + 1 );
     }
   }
-  public void work(Player A){
+  public void work(Player A, Workaholic work){
   //( ++$, -happi, -hp),workaholic
     A.setStr( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
@@ -125,7 +119,7 @@ public class afterHours{
     }
   }
   
-  public void walk(Player A){
+  public void walk(Player A, Royal roy){
   //(+happi, +hp),none,royal
     A.setStr( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
