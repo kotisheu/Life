@@ -22,8 +22,14 @@ public class Student extends Character {
     setAff(0);
     
   }
-
+  
   public void talk() {
+    String r = "";
+    r = "Hey! Come on, I saved you a seat!"
+    System.out.println(r);
+  }
+
+  public void firstTalk() {
       isr = new InputStreamReader( System.in );
       in = new BufferedReader(isr);
 
