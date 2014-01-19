@@ -22,8 +22,14 @@ public class Pretty extends Character {
     setMet(false);
     setAff(0);
   }
-
+  
   public void talk() {
+    String r = "";
+    r = "A word of advice? Kick back, relax, and look good!";
+    System.out.println(r);
+  }
+
+  public void firstTalk() {
       isr = new InputStreamReader( System.in );
       in = new BufferedReader(isr);
 
