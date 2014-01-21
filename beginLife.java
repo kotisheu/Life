@@ -27,10 +27,67 @@ public class beginLife{
     int i=0;
     while( i<D){
     a.setTile(a.getTile()+ 1);
-      if(a.getTile()==200 && a.getRoute().contains(A)||a.getRoute().contains(B)){
-      Branchess.marry();
-      i=D;//stop
+      //tile200 routeA/B preReq interest with any character > 50
+      if(a.getTile()==200 && a.getRoute().contains(A) || a.getRoute().contains(B)){
+         //tile200 routeA/B preReq interest with any character > 50
+         /*choice1-marry-> Choose which character to marry,
+         only accepts if that is the one with interest >50,
+         need way to keep track*/
+         a.setRoute(C);
+         // choice2-nomarry
+         a.setRoute(D);
+         Branchess.marry(a);
+         i=D;//stop
+      }else if(a.getTile()==235 && a.getRoute().contains(A) || a.getRoute().contains(B)){
+         //tile235 routeAC/BC preReq still married,interest >60 
+         /*choice1-yes
+         a.setRoute(E);
+         */choice2-no
+         a.setRoute(F);
+         Branchess.child1(a);
+         i=D;//stop
+      }else if(a.getTile()== 265/330 && a.getRoute().contains(A) || a.getRoute().contains(B)){
+         //tile265/330 routeACE/ACF/BCE/BCF preReq money> ???
+         /*choice1-yes
+         a.setRoute(G);
+         */choice2-nom
+         a.setRoute(H);
+         Branchess.house(a);
+         i=D;//stop
+      }else if(a.getTile()==295 && a.getRoute().contains(A) || a.getRoute().contains(B)){
+         //tile295 routeACEG/ACFG/BCEG/BCFG/ADKO/ADKP/ADLM/ADLN/BDKO/BDKP/BDLM/BDLN preReq stillmarried, interest > 70
+         /*choice1-yes
+         a.setRoute(I);
+         */
+         Branchess.child2(a);
+         i=D;//stop
+      }else if(a.getTile()==320/235 && a.getRoute().contains(A) || a.getRoute().contains(B)){
+         //tile320/235 routeAD/BD/ACEGI/ACEGJ/ACEH/ACFGI/ACFGJ/ACFH preReq money>??? 
+         /*choice1-yes
+         a.setRoute(K);
+         */choice2-no
+         a.setRoute(L);
+         
+         Branchess.car(a);
+         i=D;//stop
+      }else if(a.getTile()==345/255 && a.getRoute().contains(A) || a.getRoute().contains(B)){
+         //tile345/255 routeADL/BDL/ACEGI/ACEGJK/ACEHK/ACFGIK/ACFGJK/ACFHK/ACEGIL/ACEGJL/ACEHL/ACFGIL/ACFGJL/ACFHL preReq $$>
+         /*choice1-yes
+         a.setRoute(M);
+         */choice2-no
+         a.setRoute(N);
+         Branchess.business(a);
+         i=D;//stop
+      }else{
+         //tile routeADK/BDK preReq $$>??
+         /*choice1-yes
+            a.setRoute(O);
+         */choice2-no
+         a.setRoute(P);
+         Branchess.travel(a);
+         i=D;//stop
       }
+      
       // repeaaaaaaaaaaaaaat ^
       i++;
     }
