@@ -1,5 +1,5 @@
 Life
 ====
-(eventually)START GAME BY javac beginLife.java
+(eventually)START GAME BY javac Gooey.java
 //ARTCREDITSHERE
 by coffeeandtea
