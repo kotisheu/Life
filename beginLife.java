@@ -101,11 +101,15 @@ public String ___ calcScore(Player a){
 }
   public String endLife(){  
   if (person.getTile()==250(???)){
-    gameOn=false;}
+    gameOn=false;
+    return "Congratulations! You have lived your life and survived in the process! Now, the question is, have you lived it well?"}
   else if (person.getHp()<1){
-    gameOn=false;}
+    gameOn=false;
+    return "You fell ill due to overworking or bad health and take to the bed until an angel collects you. Unfortunately, your life must draw to a close. Will you be remembered?"}
   else if (person.getHappi()<1){
-    gameOn=false;}//EACH SHOULD RETURN TEXT THAT CORRESPONDS TO HOW GAME ENDED ( IE, " Congrats ~~~" or " You couldn't take the pressure and suicided"
+    gameOn=false;
+    return "You sink under the pressure and into the deep crags of despair. You have not made the most of your life in terms of happiness, and for that, you bring it to the end."}
+    //EACH SHOULD RETURN TEXT THAT CORRESPONDS TO HOW GAME ENDED ( IE, " Congrats ~~~" or " You couldn't take the pressure and suicided"
                     //or "You fell ill and died"
 
    public static void main {String [] args){
@@ -148,9 +152,18 @@ public String ___ calcScore(Player a){
   s=" Choose place: gym, work, etcccc."
   System.out.print (s);
   String p=in.readLine();
-   if (p== "gym"){
-      afterHours.gym(); //isthishowyoucallthis .....
-   }
+   if ( p== "gym" )
+      afterHours.gym(person, buffOne, preOne, workOne); //isthishowyoucallthis .....
+   else if ( p == "library") 
+      afterHours.library(person, smartOne, stuOne);
+   else if ( p == "mall" )
+      afterHours.mall(person, preOne, workOne, buffOne);
+   else if ( p == "beauty salon" )
+      afterHours.beautySalon(person, preOne, smartOne);
+   else if ( p == "work" )
+      afterHours.work(person, workOne);
+   else if ( p == "walk" )
+      afterHours.walk(person, royOne);
    //^ repeaaaaaat
   }
 
