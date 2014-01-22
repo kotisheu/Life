@@ -23,77 +23,115 @@ public class Pretty extends Character {
     setAff(0);
   }
   
-  public void talk() {
-    String r = "";
-    r = "A word of advice? Kick back, relax, and look good!";
-    System.out.println(r);
-  }
+    public String talk() {
+  	String r = "A word of advice? Kick back, relax, and look good!";
+  	return r;
+    }
+  
+    public String Q1() {
+	String s = "";
+	s = "You need help with all those bags?";
+	return s;
+    }
 
-  public void firstTalk() {
-      isr = new InputStreamReader( System.in );
-      in = new BufferedReader(isr);
+    public String Q1C1() {
+	String s = "yes";
+	return s;
+    }
+    // setAff( getAff() + 5 );
+    public String Q1A1() {
+	String s = "No problem. I'm happy to help. That's wayyy too much for one person to handle.";
+	return s;
+    }
 
-    String s = "";
-    s = "You need help with all those bags?";
-    System.out.println(s);
-    try {
-        String response = in.readLine();
+    public String Q1C2() {
+	String s = "no";
+	return s;
     }
-    catch( IOException e ) {}
-    if (response == "yes") {
-      setAff( getAff() + 5 );
-      System.out.println("No problem. I'm happy to help. That's wayyy too much for one person to handle.");
+    //setAff( getAff() + 20 );
+    public String Q1A2() {
+	String s = "Used to it? I am myself, but here, let me take some anyway. It's much easier, believe me.";
+	return s;
     }
-    else if (response == "no") {
-      setAff( getAff() + 20 );
-      System.out.println("Used to it? I am myself, but here, let me take some anyway. It's much easier, believe me.");
+
+    public String intro() {
+	String s = "What was that? Oh, I'm just a person that shares your pain of too many bags. " + getName() + ".";
+	return s;
     }
-    
-    s = "What was that? Oh, I'm just a person that shares your pain of too many bags. " + getName() + ".";
-    System.out.println(s);
-    
-    s = "Where are we off to?\n";
-    s += "\t1: On to the next store! I'm just getting started! Bags can't weigh me down!";
-    s += "\t2: I was just about to leave... Then you won't have to carry anything for me.";
-    s += "\t3: Maybe just one more store... And after that, home.";
-    System.out.println(s);
-    String choice = in.readLine();
-    if (choice == "1") {
-      setAff( getAff() + 15 );
-      System.out.println("I love your mentality! Let's go! I'm ready when you are.");
-    }
-    else if (choice == "2") {
-      setAff( getAff() - 5 );
-      System.out.println("Thanks for being considerate, but a couple of bags won't break me!");
-    }
-    else if (choice == "3") {
-      setAff( getAff() + 20 );
-      System.out.println("Hmm, someone who has control! I like that. Let's go for coffee afterwards!");
+
+    public String Q2() {
+	String s = "Where are we off to?";
+	return s;
     }
     
-    s = "Hey, look at those stores! Which one matches your sense of style?\n";
-    s += "\t1: Casual and natural. That way, people can see you for who you are.";
-    s += "\t2: Dressy's my thing! It's never bad to look your best.";
-    s += "\t3: Different! I like to stand out of the crowd!";
-    choice = in.readLine();
-    System.out.println(s);
-    if (choice == "1") {
-      setAff( getAff() + 10 );
-      System.out.println("Clothes do tell a lot about you! I see a cheerful, calm person in you!");
+    public String Q2C1() {
+	String s = "1: On to the next store! I'm just getting started! Bags can't weigh me down!" ;
+	return s;
     }
-    else if (choice == "2") {
-      setAff( getAff() + 15 );
-      System.out.println("Looking your best at all times is hard work! But I agree, it really makes a difference!");
+    //setAff(getAff() + 15);
+    public String Q2A1() {
+	String s = "I love your mentality! Let's go! I'm ready when you are.";
+	return s;
     }
-    else if (choice == "3") {
-      setAff( getAff() + 5 );
-      System.out.println("As long as you can pull it off!");
+
+    public String Q2C2() {
+	String s = "2: I was just about to leave... Then you won't have to carry anything for me.";
+	return s;
+    }
+    //setAff(getAff() - 5);
+    public String Q2A2() {
+	String s = " Thanks for being considerate, but a couple of bags won't break me!";
+	return s;
+    }
+
+    public String Q2C3() {
+	String s = "3: Maybe just one more store... And after that, home.";
+	return s;
+    }
+    //setAff(getAff() + 20);
+    public String Q2A3() {
+	String s = " Hmm, someone who has control! I like that. Let's go for coffee afterwards!";
+	return s;
+    }
+
+    public String Q3() {
+	String s = " Hey, look at those stores! Which one matches your sense of style?";
+	return s;
     }
     
-    s = "I like your taste! It's amazing how shopping can bring people together.";
-    s = "/Maybe I'll bump into you again next time. But you're carrying my bags, okay?";
-    System.out.println(s);
+    public String Q3C1() {
+	String s = "1: Casual and natural. That way, people can see you for who you are." ;
+	return s;
+    }
+    //setAff(getAff() + 10);
+    public String Q3A1() {
+	String s = " Clothes do tell a lot about you! I see a cheerful, calm person in you!";
+	return s;
+    }
+
+    public String Q3C2() {
+	String s = "2: Dressy's my thing! It's never bad to look your best.";
+	return s;
+    }
+    //setAff(getAff() + 15);
+    public String Q3A2() {
+	String s = " Looking your best at all times is hard work! But I agree, it really makes a difference!";
+	return s;
+    }
+
+    public String Q3C3() {
+	String s = "3: Different! I like to stand out of the crowd!";
+	return s;
+    }
+    //setAff(getAff() + 5);
+    public String Q3A3() {
+	String s = " As long as you can pull it off!";
+	return s;
+    }
     
-  }
+    public String end() {
+	String s = "I like your taste! It's amazing how shopping can bring people together. Maybe I'll bump into you again next time. But you're carrying my bags, okay?";
+	return s;  
+    }
 
 }

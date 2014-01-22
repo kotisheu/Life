@@ -22,83 +22,116 @@ public class Nerd extends Character {
     setMet(false);
     setAff(0);
   }
+
+    public String talk() {
+  	String r = "The world really is wonderous, as in the books...";
+  	return r;
+    }
   
-  public void talk() {
-    String r = "";
-    r = "The world really is wonderous, as in the books...";
-    System.out.println(r);
-  }
+    public String Q1() {
+	String s = "";
+	s = "S-sorry! I didn't see you there! Must have been too caught up in my reading... Is that a book in your hands?";
+	return s;
+    }
 
-  public void firstTalk() {
-      isr = new InputStreamReader( System.in );
-      in = new BufferedReader(isr);
+    public String Q1C1() {
+	String s = "yes";
+	return s;
+    }
+    // setAff( getAff() + 10 );
+    public String Q1A1() {
+	String s = "Oh! It's fantastic, especially the end, when...! Oops, I won't spoil it for you...";
+	return s;
+    }
 
-    String s = "";
-    s = "S-sorry! I didn't see you there! Must have been too caught up in my reading... Is that a book in your hands?";
-    System.out.println(s);
-    try {
-        String response = in.readLine();
+    public String Q1C2() {
+	String s = "no";
+	return s;
     }
-    catch( IOException e ) {}
-    if (response == "yes") {
-      setAff( getAff() + 10 );
-      System.out.println("Oh! It's fantastic, especially the end, when...! Oops, I won't spoil it for you...");
+    //setAff( getAff() - 10 );
+    public String Q1A2() {
+	String s = "Well, you should read it anyway! It's good for the brain. But I guess all books are...";
+	return s;
     }
-    else if (response == "no") {
-      setAff( getAff() - 10 );
-      System.out.println("Well, you should read it anyway! It's good for the brain. But I guess all books are...");
+
+    public String intro() {
+	String s = "Wait, I forgot to introduce myself! I'm " + getName() + ". Pleased to meet you.";
+	return s;
     }
-    
-    s = "Wait, I forgot to introduce myself! I'm " + getName() + ". Pleased to meet you.";
-    System.out.println(s);
-    
-    s = "Hey! Since you're here, anyway, help me decide which one to check out. The fictional piece or the nonfiction?\n";
-    s += "\t1: It's up to you--I'm bad with decisions.";
-    s += "\t2: Both! The more, the better!";
-    s += "\t3: Fictional--let your mind go on adventures!";
-    s += "\t4: Nonfiction--learn about the fascinating truths and tragedies of reality."
-    System.out.println(s);
-    String choice = in.readLine();
-    if (choice == "1") {
-      setAff( getAff() -10 );
-      System.out.println("At least we have a commonality in that! Hmm, this won't do... which one to choose?!");
-    }
-    else if (choice == "2") {
-      setAff( getAff() -5 );
-      System.out.println("Great idea! But... I only asked because I won't have time to read both...");
-    }
-    else if (choice == "3") {
-      setAff( getAff() + 10 );
-      System.out.println("Great idea! I was in need of a break from reality, anyway.");
-    }
-    else if (choice == "4") {
-      setAff( getAff() + 10 )
-      System.out.println("You know what, I like that! Nature and society both have their own mystical secrets, don't they?")
+
+    public String Q2() {
+	String s = "Hey! Since you're here, anyway, help me decide which one to check out. The fictional piece or the nonfiction?";
+	return s;
     }
     
-    s = "You know, I'm actually thinking of attending night school... So unfortunately, I won't be here that often anymore.\n";
-    s += "\t1: Aw, I was looking so forward to seeing you again.";
-    s += "\t2: Good luck with that! I'm sure you'll do phenomenally.";
-    s += "\t3: Don't sweat it! As long as you have a book in your hands and knowledge in your head, you'll be fine!";
-    choice = in.readLine();
-    System.out.println(s);
-    if (choice == "1") {
-      setAff( getAff() + 5 );
-      System.out.println("Dont worry! I'll still try to be here whenever I can!");
+    public String Q2C1() {
+	String s = "1: Both! The more, the better!" ;
+	return s;
     }
-    else if (choice == "2") {
-      setAff( getAff() + 5 );
-      System.out.println("You think so? I would hope so, but I'm not too sure...");
+    //setAff(getAff() - 5);
+    public String Q2A1() {
+	String s = "Great idea! But... I only asked because I won't have time to read both...";
+	return s;
     }
-    else if (choice == "3") {
-      setAff( getAff() + 15 );
-      System.out.println("Haha! I like that! And I'll definitely keep it in mind.");
+
+    public String Q2C2() {
+	String s = "2: Fictional--let your mind go on adventures!";
+	return s;
+    }
+    //setAff(getAff() + 10);
+    public String Q2A2() {
+	String s = "Great idea! I was in need of a break from reality, anyway.";
+	return s;
+    }
+
+    public String Q2C3() {
+	String s = "3: Nonfiction--learn about the fascinating truths and tragedies of reality.";
+	return s;
+    }
+    //setAff(getAff() + 10);
+    public String Q2A3() {
+	String s = "You know what, I like that! Nature and society both have their own mystical secrets, don't they?";
+	return s;
+    }
+
+    public String Q3() {
+	String s = "You know, I'm actually thinking of attending night school... So unfortunately, I won't be here that often anymore.";
+	return s;
     }
     
-    s = "It was so nice to have met you, but I have to go now or I'll be late. Wish me the best!";
-    s += "/nOh, and, definately check that book out!";
-    System.out.println(s);
+    public String Q3C1() {
+	String s = "1: Aw, I was looking so forward to seeing you again." ;
+	return s;
+    }
+    //setAff(getAff() + 5);
+    public String Q3A1() {
+	String s = "Dont worry! I'll still try to be here whenever I can!";
+	return s;
+    }
+
+    public String Q3C2() {
+	String s = "2: Good luck with that! I'm sure you'll do phenomenally.";
+	return s;
+    }
+    //setAff(getAff() + 5);
+    public String Q3A2() {
+	String s = "You think so? I would hope so, but I'm not too sure...";
+	return s;
+    }
+
+    public String Q3C3() {
+	String s = "3: Don't sweat it! As long as you have a book in your hands and knowledge in your head, you'll be fine!";
+	return s;
+    }
+    //setAff(getAff() + 15);
+    public String Q3A3() {
+	String s = "Haha! I like that! And I'll definitely keep it in mind.";
+	return s;
+    }
     
-  }
+    public String end() {
+	String s = "It was so nice to have met you, but I have to go now or I'll be late. Wish me the best! Oh, and, definately check that book out!";
+	return s;  
+    }
 
 }
