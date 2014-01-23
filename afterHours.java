@@ -59,12 +59,13 @@ public class afterHours{
       work.setAff( work.getAff() + 1 );
       retStr += "\n+1 Affinity!";
     }
+    return retStr;
   }
   
   public String library (Player A, Nerd ner, Student stu){
   //(++int),smart,student(unable to raise interest if not route A)
     String retStr = "";
-    A.setInt( A.getInt() + 5 );
+    A.setInt( A.getInt() + 10 );
     retStr += "Reading books gives you smarts. +5 Intelligence";
     int boo = (int) ( 5 * Math.random() );
     if ( boo == 0 && ner.getMet() == false ) {
@@ -88,7 +89,7 @@ public class afterHours{
   //(+att , --$)pretty, work, buffy
     String retStr = "";
     A.setAtt( A.getAtt() + 5 );
-    retStr += "You got prettier! +5 Attractiveness";
+    retStr += "You got prettier! +10 Attractiveness";
     A.setMoo( A.getMoo() - 10 );
     retStr += "\nBut beauty comes at a price... - $10";
     int boo = (int) ( 5 * Math.random() );
@@ -119,8 +120,8 @@ public class afterHours{
     String retStr = "";
     A.setAtt( A.getStr() + 5 );
     retStr += "You're feeling good, and looking even better! +5 Attractiveness";
-    A.setMoo( A.getMoo() - 10 );
-    retStr += "\nYou look like a beauty, and pay like one too. - $10";
+    A.setMoo( A.getMoo() - 5 );
+    retStr += "\nYou look like a beauty, and pay like one too. - $5";
     int boo = (int) ( 10 * Math.random() );
     if ( boo == 0 ) {
       retStr += "\n" + pret.talk();
@@ -131,39 +132,54 @@ public class afterHours{
       ner.talk();
       ner.setAff( ner.getAff() + 1 );
     }
+    return retStr;
   }
-  public void work(Player A, Workaholic work){
+  
+  public String work(Player A, Workaholic work){
   //( ++$, -happi, -hp),workaholic
-    A.setStr( A.getStr() + 5 );
-    A.setMoo( A.getMoo() - 10 );
+    String retStr = "";
+    A.setStr( A.getHappi() - 10 );
+    retStr += "Working over time is a bummer... -10 Happiness";
+    A.setHP( A.getHP() - 2 );
+    retStr += "\nYour head is spinning from the work! -2 HP";
+    A.setMoo( A.getMoo() + 15 );
+    retStr += "\nYou made some extra bucks! +$15";
     int boo = (int) ( 10 * Math.random() );
     if ( (boo == 0 )&&( work.getMet() == false) ) {
       work.setMet(true);
       // work.firstTalk();
     }
     else if ( (boo == 0) &&( work.getMet() == true )) {
-      work.talk();
+      retStr += "\n" + work.talk();
       work.setAff( work.getAff() + 5 );
+      retStr += "\n+5 Affinity!";
     }
+    return retStr;
   }
   
-  public void walk(Player A, Royals roy){
+  public String walk(Player A, Royals roy){
   //(+happi, +hp),none,royal
-    A.setStr( A.getStr() + 5 );
-    A.setMoo( A.getMoo() - 10 );
+    Striing retStr = "";
+    A.setHappi( A.getHappi() + 5 );
+    retStr += "It's a beautiful day out! +5 Happiness";
+    A.setHP( A.getHP() + 5 );
+    retStr += "\nTaking a breath of fresh air and soaking up vitamin D is amazing! +5 HP";
     int boo = (int) ( 100 * Math.random() );
     if (( boo == 0) && (roy.getMet() == false )) {
       roy.setMet(true);
       // roy.firstTalk();
     }
     else if (( boo == 0) && (roy.getMet()== true) ) {
-      roy.talk();
+      retStr += "\n" + roy.talk();
       roy.setAff( roy.getAff() + 2 );
+      retStr += "\n+2 Affinity!";
+    }
+    return retStr;
   }
     // public void date(){
   //(--$, ++happi), choose who, names are  generic if havent met( ie, Girl1, Girl2, Emily, Girl4,Bob)
   // if interest if higher than x amount, they accept, Causes + interest depending on how it goes
-  }
+  //}
   // interest is raised by a) having higer stats than the character(+ 25(?)), 
   //b. meeting the character more often(non-date) (-3 to +3 , depending on the dialogue),
   //and C. Asking them on a date(+/- 1/5/10, depending on calibur of date, aka randomly :D
