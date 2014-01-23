@@ -16,13 +16,13 @@ public class afterHours{
     A.setMo( A.getMo() + 5 );
     if (A.getRoute() == "A") {
       int boo = (int) ( 5 * Math.random() );
-      if ( boo == 0 && stu.getMet() == false ) {
+      if (( boo == 0) &&( stu.getMet() == false )) {
         stu.setMet(true);
-        stu.firstTalk();
+	// stu.firstTalk();
       }
-      else if ( boo == 0 && stu.getMet() = true )
+      else if (( boo == 0 )&&( stu.getMet()== true ))
         stu.talk();
-        stu.setAff( pret.getAff() + 5 );
+        stu.setAff( stu.getAff() + 5 );
     }
   }
   
@@ -31,13 +31,13 @@ public class afterHours{
     A.setStr( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
     int boo = (int) ( 5 * Math.random() );
-    if ( boo == 0 && buf.getMet() == false ) {
+    if ( (boo == 0 )&& (buf.getMet() == false )) {
       buf.setMet(true);
-      buf.firstTalk();
+      // buf.firstTalk();
     }
-    else if ( boo == 0 && buf.getMet() = true ) {
+    else if ( (boo == 0) &&( buf.getMet()== true) ) {
       buf.talk();
-      buf.setAff( pret.getAff() + 5 );
+      buf.setAff( buf.getAff() + 5 );
     }
     else if ( (int) ( 15 * Math.random() ) == 0  ) {
       pret.talk();
@@ -45,7 +45,7 @@ public class afterHours{
     }
     else if ( (int) ( 25 * Math.random() ) == 0  ) {
       work.talk();
-      work.setAff( pret.getAff() + 1 );
+      work.setAff( work.getAff() + 1 );
     }
   }
   
@@ -55,15 +55,15 @@ public class afterHours{
     int boo = (int) ( 5 * Math.random() );
     if ( boo == 0 && ner.getMet() == false ) {
       ner.setMet(true);
-      ner.firstTalk();
+      //  ner.firstTalk();
     }
-    else if ( boo == 0 && ner.getMet() = true ) {
+    else if (( boo == 0 )&&( ner.getMet()== true )) {
       ner.talk();
-      ner.setAff( pret.getAff() + 5 );
+      ner.setAff( ner.getAff() + 5 );
     }
-    else if ( (int) ( 15 * Math.random() ) == 0 && A.getRoute() == "A" ) {
+    else if ( ((int) ( 15 * Math.random() ) == 0) && (A.getRoute().contains("A")) ) {
       stu.talk();
-      stu.setAff( pret.getAff() + 1 );
+      stu.setAff( stu.getAff() + 1 );
     }
   }
   
@@ -72,21 +72,21 @@ public class afterHours{
     A.setAtt( A.getAtt() + 5 );
     A.setMoo( A.getMoo() - 10 );
     int boo = (int) ( 5 * Math.random() );
-    if ( boo == 0 && pret.getMet() == false ) {
+    if ( (boo == 0) && (pret.getMet() == false )) {
       pret.setMet(true);
-      pret.firstTalk();
+      // pret.firstTalk();
     }
-    else if ( boo == 0 && pret.getMet() = true ) {
+    else if (( boo == 0 )&&( pret.getMet()== true) ) {
       pret.talk();
       pret.setAff( pret.getAff() + 5 );
     }
     else if ( (int) ( 15 * Math.random() ) == 0  ) {
       work.talk();
-      work.setAff( pret.getAff() + 1 );
+      work.setAff( work.getAff() + 1 );
     }
     else if ( (int) ( 25 * Math.random() ) == 0  ) {
       buf.talk();
-      buf.setAff( pret.getAff() + 1 );
+      buf.setAff( buf.getAff() + 1 );
     }
   }
   
@@ -109,30 +109,30 @@ public class afterHours{
     A.setStr( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
     int boo = (int) ( 10 * Math.random() );
-    if ( boo == 0 && work.getMet() == false ) {
+    if ( (boo == 0 )&&( work.getMet() == false) ) {
       work.setMet(true);
-      work.firstTalk();
+      // work.firstTalk();
     }
-    else if ( boo == 0 && work.getMet() = true ) {
+    else if ( (boo == 0) &&( work.getMet() == true )) {
       work.talk();
-      work.setAff( pret.getAff() + 5 );
+      work.setAff( work.getAff() + 5 );
     }
   }
   
-  public void walk(Player A, Royal roy){
+  public void walk(Player A, Royals roy){
   //(+happi, +hp),none,royal
     A.setStr( A.getStr() + 5 );
     A.setMoo( A.getMoo() - 10 );
     int boo = (int) ( 100 * Math.random() );
-    if ( boo == 0 && roy.getMet() == false ) {
+    if (( boo == 0) && (roy.getMet() == false )) {
       roy.setMet(true);
-      roy.firstTalk();
+      // roy.firstTalk();
     }
-    else if ( boo == 0 && roy.getMet() = true ) {
+    else if (( boo == 0) && (roy.getMet()== true) ) {
       roy.talk();
-      roy.setAff( pret.getAff() + 2 );
+      roy.setAff( roy.getAff() + 2 );
   }
-  public void date(){
+    // public void date(){
   //(--$, ++happi), choose who, names are  generic if havent met( ie, Girl1, Girl2, Emily, Girl4,Bob)
   // if interest if higher than x amount, they accept, Causes + interest depending on how it goes
   }
