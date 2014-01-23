@@ -15,6 +15,7 @@ public class Player extends Character {
    }
 
    public Player ( String nombre, boolean gender ) {
+   	this();
 	setName(nombre);
 	setGen(gender);
    }
