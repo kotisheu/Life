@@ -2,7 +2,7 @@ public class Player extends Character {
 
    public Player() {
 	setName("poo");
-	setRoute("");
+	setRoute(" ");
 	setTile(0);
 	setHappi(50);
 	setStr(10);
@@ -15,7 +15,7 @@ public class Player extends Character {
    }
 
    public Player ( String nombre, boolean gender ) {
-   	this();
+       this();
 	setName(nombre);
 	setGen(gender);
    }

@@ -1,9 +1,5 @@
 Life
 ====
-** **
-Uh, just an update but we kinda moved to dropbox because images+ repos=???
-^o^
-** **
-START GAME BY java Gooey.java
+(eventually)START GAME BY javac Gooey.java
 //ARTCREDITSHERE
 by coffeeandtea

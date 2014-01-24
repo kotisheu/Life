@@ -1,0 +1,163 @@
+DevLog of coffeeandtea ( Sherry Ko and Emily Liao )
+
+Entry #00
+Date: 1/15 - 1/17
+
+Unfortunately, all the work that we did in this stage of the project goes in one big blob.
+This portion of the process was spent on recognizing what classes we needed, what methods
+and attributes belonged to each. The more we talked, the more complicated the game seemed
+to get, so we decided to draw things out with diagrams showing the differences between the
+Character classes. A majoy part of it was getting to know the difference between the player
+and the other classes it interacted with. 
+- Obstacles Overcome:
+- Unresolved Issues:
+- Cool Stuff Learned:
+- Mid-development Design Changes:
+- Lessons Learned:
+  1. Draw things out! It's much easier to grasp how something is supposed to act if you
+     see it sketched out on paper.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entry #01
+Date: 1/18
+
+We came up with conversations for the characters to say, as well as coding what would pop
+up on the screen as an event after each roll of the dice. It was semi-difficult to come up
+with all these what-if scenarios, but so far, this project rather tedious, with many classes
+that had the same methods, yet each overrode them. Much work, though not such hard...
+
+- Obstacles Overcome:
+- Unresolved Issues:
+- Cool Stuff Learned:
+- Mid-development Design Changes:
+- Lessons Learned:
+  1. Patience is a virtue.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entry #02
+Date: 1/19
+
+By this point, we didn't have a GUI, but all our classes are in pretty good shape. We made 
+sure that they compile (yay!). Today, we focused on creating an afterHours class that would
+be useful in allowing for random interactions between the player and other characters that 
+sprout up sporadically in the game. In addition, we tried to mathematically reason out where
+the forks in the road, and thereby determining how long the game should be. We finally settled
+for the player to travel 365 tiles, somewhat like a year, yet some of these would split off,
+so the board would have to be composed of more.
+
+- Obstacles Overcome:
+- Unresolved Issues:
+- Cool Stuff Learned:
+- Mid-development Design Changes:
+- Lessons Learned:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entry #03
+Date: 1/20
+
+Everything is slowly floating its way into the GUI file. Originally, we thought that we 
+would have driver file to begin the game, starting up a player, and everything else of the 
+sort. However, as we became more familiar with how the GUI worked, we found that instead, 
+many of the methods in our driver file would be pretty much unable to be used with the 
+pictures and visual aspect of our project unless, well, it was in the visual part.
+
+- Obstacles Overcome:
+  1. Shifting everything slowly into the GUI, and realizing what would have to be moved in
+     order for the project to work. We had started off with a more simplistic version, but
+     to move it to GUI required more than simplicity. However, this was all made possible
+     by resolution to finish.
+- Unresolved Issues:
+  1. How do buttons
+- Cool Stuff Learned:
+- Mid-development Design Changes:
+- Lessons Learned:
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entry #04
+Date: 1/21
+
+GUI is challenging! It's so specific, and though we feel that there may be easier ways to
+resolve some issues, we decided that it would be much better to think simply and make sure
+it can work rather than going for something more complex that may not work. After all, we
+are aiming for function!
+- Obstacles Overcome:
+  1. The very demanding reality of GUI: We had to change some of our methods we didn't
+     realize needed to return strings in the beginning into ones that did after looking
+     more closely at them. Before this, we used methods that were void, and would SOP
+     Strings, thinking that it would be the most efficient way of doing it. ...And then
+     along came GUI.
+- Unresolved Issues:
+- Cool Stuff Learned:
+- Mid-development Design Changes:
+  1. We decided that it would be nearly impossible to draw up a board with around 800 tiles,
+     which was the amount we would have needed, with all the splits in the road. Therefore,
+     we noted that it would probably be for the best that we abandon this silly dream and
+     go for something simpler. In this case, it turned out to be using a calendar for the 
+     board and changing the month as they passed. However, this means that we were unable
+     to show when the physical forks in the road occured. This was a disappointment, but
+     only a minor one, as we were excited about making it more user-friendly. I don't think
+     users would want to stare at a board with 800 or so tiles.
+- Lessons Learned:
+  1. It's okay to improvise and change things on the way! 
+  
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entry #05
+Date: 1/22
+
+Today, we hoped to get more of the GUI down, and to resolve some issues regarding the input.
+It came to our attention as we were testing the GUI that the user was able to type within
+the box meant to tell him/her what was happening. Although this didn't do anything that 
+affected the game, we concluded that it might confuse the player. Thus, we needed to get rid
+of it. On the other hand, we were able to set up buttons and get a better sense of how to 
+place the stats on the side.
+- Obstacles Overcome:
+- Unresolved Issues:
+- Cool Stuff Learned:
+- Mid-development Design Changes:
+- Lessons Learned:
+  1. Always think about how the user feels! 
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Entry #06
+Date: 1/23
+
+It is the final day of working on this project, and we want it to be nothing but the best.
+Looking back, it seems as though the project really has evolved as we figured out what
+needed to be added or would be more efficient. Sadly, this is the last entry to this beloved
+DevLog, and it seems as though we achieved what we had only imagined and started as the
+mashing of two ideas together. Who knew they would work out so well? Definitely not us,
+but we do believe that it was in the final stretches that the most difficulties arose.
+- Obstacles Overcome: 
+  1.One of the last parts we had to complete was the addition of JPEG images. This was more 
+    tricky, because it was so hard to position it so we were satisfied. This included setting
+    it to be the right size. GUI was a breath of fresh air already, but to have to code in 
+    something more than buttons or panels was challenging.
+    BUT WE OVERCAME IT! Somehow. 
+    That somehow involved 'try,' which we never really thought was useful... I guess that 
+    mentality was trashed by this part of the project. All hail try and catch.
+  2.This problem followed right afterwe figured out how to put JPGs in. We then has to find
+    how to stretch them such that they took up the alotted space, instead of just staying the
+    same size. Thank goodness for online resources such as StackOverflow that helped combat
+    this issue!
+- Unresolved Issues:
+  1. Unfortunately, we were unable to put in the calendar, though we don't understand why it
+     doesn't work.
+  2. In addition, once a button is pressed, it adds or subtracts to the stats based upon the
+     number of turn it has. However, this was never a part of running aHours(), so we really 
+     don't know why that occured.
+  3. The gym button must be pressed first, otherwise, the other pictures will not show up.
+     This is rather mysterious in itself.
+  4. We didn't know how to make the conversations come into play....
+- Cool Stuff Learned:
+  1. How to put JPEGs in panels
+  2. Why try and except are lifesavers
+- Mid-development Design Changes:
+  1. We made criteria for specific events to take place.
+- Lessons Learned:
